@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar 29 08:48:08 2023
+# Process ID: 2676
+# Current directory: C:/Users/86183/Desktop/f_adder/mycounter/mycounter.runs/synth_1
+# Command line: vivado.exe -log my_testf.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source my_testf.tcl
+# Log file: C:/Users/86183/Desktop/f_adder/mycounter/mycounter.runs/synth_1/my_testf.vds
+# Journal file: C:/Users/86183/Desktop/f_adder/mycounter/mycounter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source my_testf.tcl -notrace
+Command: synth_design -top my_testf -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8404 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 564.070 ; gain = 183.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_testf' [C:/Users/86183/Desktop/f_adder/mycounter/mycounter.srcs/sources_1/new/my_testf.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cnt' [C:/Users/86183/Desktop/f_adder/mycounter/mycounter.srcs/sources_1/new/cnt.v:3]
+ERROR: [Synth 8-91] ambiguous clock in event control [C:/Users/86183/Desktop/f_adder/mycounter/mycounter.srcs/sources_1/new/cnt.v:18]
+ERROR: [Synth 8-6156] failed synthesizing module 'cnt' [C:/Users/86183/Desktop/f_adder/mycounter/mycounter.srcs/sources_1/new/cnt.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'my_testf' [C:/Users/86183/Desktop/f_adder/mycounter/mycounter.srcs/sources_1/new/my_testf.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 628.109 ; gain = 247.348
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 08:48:19 2023...

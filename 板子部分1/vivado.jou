@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 24 22:27:37 2023
+# Process ID: 15008
+# Current directory: C:/Users/86183/Desktop/f_adder/myff_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29188 C:\Users\86183\Desktop\f_adder\myff_adder\myff_adder.xpr
+# Log file: C:/Users/86183/Desktop/f_adder/myff_adder/vivado.log
+# Journal file: C:/Users/86183/Desktop/f_adder/myff_adder\vivado.jou
+#-----------------------------------------------------------
+start_guopopen_project C:/Users/86183/Desktop/f_adder/myff_adder/myff_adder.xpupupdate_compile_order -fileset sources_1
+launch_simulation
+source adder.tcl
+close_sim

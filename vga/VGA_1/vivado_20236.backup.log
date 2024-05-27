@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 12 16:12:39 2023
+# Process ID: 20236
+# Current directory: D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8220 D:\Program Files (x86)\QQ\1490071261\FileRecv\Final Project\Final Project\VGA_1\VGA_1.xpr
+# Log file: D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1/vivado.log
+# Journal file: D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 16:12:58 2023...

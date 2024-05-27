@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar 15 11:12:20 2023
+# Process ID: 9528
+# Current directory: C:/Users/86183/Desktop/f_adder/project_3/project_3.runs/synth_1
+# Command line: vivado.exe -log tb_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_adder.tcl
+# Log file: C:/Users/86183/Desktop/f_adder/project_3/project_3.runs/synth_1/tb_adder.vds
+# Journal file: C:/Users/86183/Desktop/f_adder/project_3/project_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tb_adder.tcl -notrace

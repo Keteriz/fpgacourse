@@ -1,0 +1,10 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "tb_adder")
+(DATE "Wed Mar 15 11:25:16 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2019.1")
+(DIVIDER /)
+(TIMESCALE 1ps)
+)

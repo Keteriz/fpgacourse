@@ -1,0 +1,425 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar 29 09:40:16 2023
+# Process ID: 1340
+# Current directory: C:/Users/86183/Desktop/f_adder/666finaltry
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9304 C:\Users\86183\Desktop\f_adder\666finaltry\666finaltry.xpr
+# Log file: C:/Users/86183/Desktop/f_adder/666finaltry/vivado.log
+# Journal file: C:/Users/86183/Desktop/f_adder/666finaltry\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1204.598 ; gain = 281.027
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 09:41:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 09:41:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 09:43:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+open_hw
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1818.090 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1818.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1818.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1982.648 ; gain = 778.051
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183B5A4C7A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183B5A4C7A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A4C7A
+set_property PROGRAM.FILE {C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.FILE {E:/Xilinx/Vivado/2019.1/data/xicom/cfgmem/spi_xc7a35t_pullnone.bit} [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-2149] File E:/Xilinx/Vivado/2019.1/data/xicom/cfgmem/spi_xc7a35t_pullnone.bit not found. Check file name and file permissions.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:00:55 . Memory (MB): peak = 3153.699 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3153.699 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 10:00:56 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 10:02:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 10:03:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:00:55 . Memory (MB): peak = 3170.113 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3170.113 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]'
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]'
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 10:16:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 10:17:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 10:18:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:00:55 . Memory (MB): peak = 3170.113 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3170.113 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 10:22:01 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 10:22:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 10:23:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 10:24:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 10:24:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 10:25:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:00:55 . Memory (MB): peak = 3183.141 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3183.141 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 10:32:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 10:33:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 10:35:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/runme.log
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:00:55 . Memory (MB): peak = 3183.551 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3183.551 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A4C7A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A4C7A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 3198.031 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A4C7A
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183B5A4C4A}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A4C4A
+set_property PROGRAM.FILE {C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bit} [get_hw_devices xc7a35t_0_1]
+current_hw_device [get_hw_devices xc7a35t_0_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0_1] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0_1] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:00:54 . Memory (MB): peak = 3198.520 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3198.520 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7a35t_0_1 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.FILES [list "C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.runs/impl_1/cnt.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0_1] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0_1] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0_1] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0_1] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:00:54 . Memory (MB): peak = 3198.520 ; gain = 0.000
+endgroup
+boot_hw_device  [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtoolstcl 44-664] Will wait up to 180 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+boot_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3198.520 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A4C4A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A4C7A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A4C7A
+exit

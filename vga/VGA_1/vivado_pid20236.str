@@ -1,0 +1,77 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 20236
+License: Customer
+
+Current time: 	Mon Jun 12 16:12:54 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1600
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 125 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	E:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	86183
+User home directory: C:/Users/86183
+User working directory: D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2019.1
+RDI_DATADIR: E:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: E:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/86183/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/86183/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/86183/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1/vivado.log
+Vivado journal file location: 	D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1/vivado.jou
+Engine tmp dir: 	D:/Program Files (x86)/QQ/1490071261/FileRecv/Final Project/Final Project/VGA_1/.Xil/Vivado-20236-LAPTOP-PUQUGI7T
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_FOR_ALTIUM_OVERRIDE:  
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2019.1
+XILINX_SDK: E:/Xilinx/SDK/2019.1
+XILINX_VIVADO: E:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 676 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Error: 'Can't open project 'VGA_1'. Please verify that the project still exists. (Open Project)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 676 MB. GUI used memory: 61 MB. Current time: 6/12/23, 4:12:56 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1012 ms.

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun  3 14:42:04 2023
+# Process ID: 7588
+# Current directory: C:/Users/86183/Desktop/f_adder/666finaltry
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19476 C:\Users\86183\Desktop\f_adder\666finaltry\666finaltry.xpr
+# Log file: C:/Users/86183/Desktop/f_adder/666finaltry/vivado.log
+# Journal file: C:/Users/86183/Desktop/f_adder/666finaltry\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86183/Desktop/f_adder/666finaltry/666finaltry.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cnt.tcl
+close_sim

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun  3 14:44:53 2023
+# Process ID: 8040
+# Current directory: C:/Users/86183/Desktop/f_adder/boardpart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8444 C:\Users\86183\Desktop\f_adder\boardpart\boardpart.xpr
+# Log file: C:/Users/86183/Desktop/f_adder/boardpart/vivado.log
+# Journal file: C:/Users/86183/Desktop/f_adder/boardpart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86183/Desktop/f_adder/boardpart/boardpart.xpr
+update_compile_order -fileset sources_1
+open_hw
